@@ -2,6 +2,7 @@ package com.teamfaiq.restoapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -158,8 +159,6 @@ public class RayhanActivity extends AppCompatActivity {
 
 
     public void kirimPesanan(View view) {
-        int totHarga = 0;
-        String message = "NG2 SG1";
 
         if (cNasiGoreng.isChecked()) makanan+= "NG"+Integer.toString(jmlNasgor)+" ";
         if (cBeefBurger.isChecked()) makanan+= "BB"+Integer.toString(jmlBBurger)+" ";
@@ -169,7 +168,10 @@ public class RayhanActivity extends AppCompatActivity {
         if (cLemonTea.isChecked()) makanan+= "LT"+Integer.toString(jmlLTea)+" ";
 
 
-        Log.d(LOG_TAG , makanan);
+        String message = makanan;
+        Intent intent = new Intent(this, FaiqActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivityForResult(intent, TEXT_REQUEST);
 
     }
 

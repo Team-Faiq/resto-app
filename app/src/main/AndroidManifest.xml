@@ -12,7 +12,14 @@
         <activity android:name=".MinaActivity"></activity>
         <activity android:name=".RickyActivity" />
         <activity android:name=".DilaActivity" />
-        <activity android:name=".FaiqActivity" />
+        <activity android:name=".FaiqActivity"
+            android:label="Faiq Activity"
+            android:parentActivityName=".RayhanActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RayhanActivity"
+                />
+        </activity>
         <activity android:name=".RayhanActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
