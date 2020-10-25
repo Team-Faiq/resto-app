@@ -12,12 +12,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class RayhanActivity extends AppCompatActivity {
-    private static final String LOG_TAG = MainActivity.class.getSimpleName();
     private int jmlNasgor = 0, jmlBBurger = 0, jmlCBurger = 0, jmlCKebab = 0, jmlIMilo = 0, jmlLTea = 0;
     private TextView tNasiGoreng, tBeefBurger, tCheeseBurger, tCheeseKebab, tIceMilo, tLemonTea;
     private CheckBox cNasiGoreng, cBeefBurger, cCheeseBurger, cCheeseKebab, cIceMilo, cLemonTea;
     protected static final String EXTRA_MESSAGE = "ini 1";
-    protected static final int TEXT_REQUEST = 1;
     private String makanan= "";
 
     @Override
@@ -159,20 +157,36 @@ public class RayhanActivity extends AppCompatActivity {
 
 
     public void kirimPesanan(View view) {
+        Toast pesan;
+        String makananNull = "";
 
-        if (cNasiGoreng.isChecked()) makanan+= "A"+Integer.toString(jmlNasgor)+"x";
-        if (cBeefBurger.isChecked()) makanan+= "B"+Integer.toString(jmlBBurger)+"x";
-        if (cCheeseBurger.isChecked()) makanan+= "C"+Integer.toString(jmlCBurger)+"x";
-        if (cCheeseKebab.isChecked()) makanan+= "D"+Integer.toString(jmlCKebab)+"x";
-        if (cIceMilo.isChecked()) makanan+= "E"+Integer.toString(jmlIMilo)+"x";
-        if (cLemonTea.isChecked()) makanan+= "F"+Integer.toString(jmlLTea)+"x";
+        if (cNasiGoreng.isChecked() && jmlNasgor > 0) makanan+= "A"+Integer.toString(jmlNasgor)+"x";
+        else if (cNasiGoreng.isChecked()) makananNull += "Nasi Goreng, ";
+        if (cBeefBurger.isChecked() && jmlBBurger > 0) makanan+= "B"+Integer.toString(jmlBBurger)+"x";
+        else if (cBeefBurger.isChecked()) makananNull += "Beef Burger, ";
+        if (cCheeseBurger.isChecked() && jmlCBurger > 0) makanan+= "C"+Integer.toString(jmlCBurger)+"x";
+        else if (cCheeseBurger.isChecked()) makananNull += "Cheese Burger, ";
+        if (cCheeseKebab.isChecked() && jmlCKebab > 0) makanan+= "D"+Integer.toString(jmlCKebab)+"x";
+        else if (cCheeseKebab.isChecked()) makananNull += "Cheese Kebab, ";
+        if (cIceMilo.isChecked() && jmlIMilo > 0) makanan+= "E"+Integer.toString(jmlIMilo)+"x";
+        else if (cIceMilo.isChecked()) makananNull += "Milo Ice, ";
+        if (cLemonTea.isChecked() && jmlLTea > 0) makanan+= "F"+Integer.toString(jmlLTea)+"x";
+        else if (cLemonTea.isChecked()) makananNull += "Lemon Tea, ";
 
+        if (makananNull.equals("") && !makanan.isEmpty() || !makanan.equals("")) {
+            String message = makanan;
+            Intent intent = new Intent(this, FaiqActivity.class);
+            intent.putExtra(EXTRA_MESSAGE, message);
+            startActivity(intent);
+        } else if (!makananNull.equals("")) {
+            pesan = Toast.makeText(this, "Terdapat makanan dengan jumlah tidak sesuai: "+ makananNull.substring(0, makananNull.length()-2), Toast.LENGTH_SHORT);
+            pesan.show();
 
-        String message = makanan;
-        Intent intent = new Intent(this, FaiqActivity.class);
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-//        startActivityForResult(intent, TEXT_REQUEST);
+        } else {
+            pesan = Toast.makeText(this, "Tidak ada makanan yang dipesan.", Toast.LENGTH_SHORT);
+            pesan.show();
+        }
+
 
     }
 
