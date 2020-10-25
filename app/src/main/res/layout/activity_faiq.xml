@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FaiqActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/teksJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTheme"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="8dp"
+        android:text="DAFTAR PESANAN"
+        android:textColor="@color/colorTextTheme"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/myTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_marginTop="15dp"
+        android:stretchColumns="*" >
+
+
+        <TableRow
+            android:id="@+id/tablerow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama "
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />/>
+
+            <TextView
+                android:id="@+id/textView4000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/teksHargaTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Total Harga : -DISINI-"
+        android:textColor="@color/colorTextTheme"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/bPesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Bayar"
+        android:textColor="@color/colorTheme"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorTextTheme" />
+</LinearLayout>

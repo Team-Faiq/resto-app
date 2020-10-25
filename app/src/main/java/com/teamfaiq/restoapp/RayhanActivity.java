@@ -160,18 +160,19 @@ public class RayhanActivity extends AppCompatActivity {
 
     public void kirimPesanan(View view) {
 
-        if (cNasiGoreng.isChecked()) makanan+= "NG"+Integer.toString(jmlNasgor)+" ";
-        if (cBeefBurger.isChecked()) makanan+= "BB"+Integer.toString(jmlBBurger)+" ";
-        if (cCheeseBurger.isChecked()) makanan+= "CB"+Integer.toString(jmlCBurger)+" ";
-        if (cCheeseKebab.isChecked()) makanan+= "CK"+Integer.toString(jmlCKebab)+" ";
-        if (cIceMilo.isChecked()) makanan+= "IM"+Integer.toString(jmlIMilo)+" ";
-        if (cLemonTea.isChecked()) makanan+= "LT"+Integer.toString(jmlLTea)+" ";
+        if (cNasiGoreng.isChecked()) makanan+= "A"+Integer.toString(jmlNasgor)+"x";
+        if (cBeefBurger.isChecked()) makanan+= "B"+Integer.toString(jmlBBurger)+"x";
+        if (cCheeseBurger.isChecked()) makanan+= "C"+Integer.toString(jmlCBurger)+"x";
+        if (cCheeseKebab.isChecked()) makanan+= "D"+Integer.toString(jmlCKebab)+"x";
+        if (cIceMilo.isChecked()) makanan+= "E"+Integer.toString(jmlIMilo)+"x";
+        if (cLemonTea.isChecked()) makanan+= "F"+Integer.toString(jmlLTea)+"x";
 
 
         String message = makanan;
         Intent intent = new Intent(this, FaiqActivity.class);
         intent.putExtra(EXTRA_MESSAGE, message);
-        startActivityForResult(intent, TEXT_REQUEST);
+        startActivity(intent);
+//        startActivityForResult(intent, TEXT_REQUEST);
 
     }
 
