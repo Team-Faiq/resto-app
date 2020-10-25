@@ -18,7 +18,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
@@ -41,14 +42,14 @@
                 android:layout_marginTop="24dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_yogyakarta"
                 android:text="YOGYAKARTA"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_surabaya"
-                android:onClick="alamat_yogyakarta"/>
+                app:layout_constraintTop_toBottomOf="@+id/bt_surabaya" />
 
             <Button
                 android:id="@+id/bt_surabaya"
@@ -57,14 +58,14 @@
                 android:layout_marginTop="24dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_surabaya"
                 android:text="SURABAYA"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_bogor"
-                android:onClick="alamat_surabaya"/>
+                app:layout_constraintTop_toBottomOf="@+id/bt_bogor" />
 
             <Button
                 android:id="@+id/bt_jakarta"
@@ -73,14 +74,14 @@
                 android:layout_marginTop="24dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_jakarta"
                 android:text="Jakarta"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
-                android:onClick="alamat_jakarta"/>
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <Button
                 android:id="@+id/bt_bogor"
@@ -89,15 +90,14 @@
                 android:layout_marginTop="24dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_bogor"
                 android:text="BOGOR"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_jakarta"
-                android:onClick="alamat_bogor"/>
-
+                app:layout_constraintTop_toBottomOf="@+id/bt_jakarta" />
 
 
             <Button
@@ -107,14 +107,14 @@
                 android:layout_marginTop="24dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_semarang"
                 android:text="SEMARANG"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_yogyakarta"
-                android:onClick="alamat_semarang"/>
+                app:layout_constraintTop_toBottomOf="@+id/bt_yogyakarta" />
 
             <Button
                 android:id="@+id/bt_malang"
@@ -123,14 +123,14 @@
                 android:layout_marginTop="24dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_malang"
                 android:text="MALANG"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_semarang"
-                android:onClick="alamat_malang"/>
+                app:layout_constraintTop_toBottomOf="@+id/bt_semarang" />
 
             <Button
                 android:id="@+id/bt_solo"
@@ -139,30 +139,33 @@
                 android:layout_marginTop="24dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_solo"
                 android:text="SOLO"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_malang"
-                android:onClick="alamat_solo"/>
+                app:layout_constraintTop_toBottomOf="@+id/bt_malang" />
 
             <Button
                 android:id="@+id/bt_purwokerto"
                 android:layout_width="170dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginBottom="70dp"
                 android:background="#5C3A11"
                 android:fontFamily="@font/bangers"
+                android:onClick="alamat_purwokerto"
                 android:text="PURWOKERTO"
                 android:textColor="@android:color/holo_orange_light"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bt_solo"
-                android:onClick="alamat_purwokerto"/>
+                app:layout_constraintTop_toBottomOf="@+id/bt_solo" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

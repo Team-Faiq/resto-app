@@ -25,7 +25,7 @@ public class FaiqActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faiq);
-        getActionBar().hide();
+
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(RayhanActivity.EXTRA_MESSAGE);

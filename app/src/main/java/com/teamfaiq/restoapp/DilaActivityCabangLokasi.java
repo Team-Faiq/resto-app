@@ -16,7 +16,6 @@ public class DilaActivityCabangLokasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dila_cabang_lokasi);
-        getActionBar().hide();
     }
     public void alamat_yogyakarta(View view) {
         Uri urll = Uri.parse("geo:0,0?q="+"Jl. Jend. Sudirman No.59, Terban, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55233");

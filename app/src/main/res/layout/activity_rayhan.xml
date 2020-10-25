@@ -28,8 +28,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layout1"
                 android:layout_width="match_parent"
@@ -66,21 +67,21 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/minNasiGoreng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="kurangJumlah"
                     android:text="-"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/teksJumlahNasigoreng"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="kurangJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/teksJumlahNasigoreng"
@@ -98,15 +99,15 @@
                     android:id="@+id/plusNasiGoreng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="tambahJumlah"
                     android:text="+"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/cbNasigoreng"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="tambahJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -153,15 +154,15 @@
                     android:id="@+id/minBeefBurger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="kurangJumlah"
                     android:text="-"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/teksJumlahBeefBurger"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="kurangJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/teksJumlahBeefBurger"
@@ -179,17 +180,18 @@
                     android:id="@+id/plusBeefBurger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="tambahJumlah"
                     android:text="+"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/cbBeefBurger"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="tambahJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layout3"
                 android:layout_width="match_parent"
@@ -233,15 +235,15 @@
                     android:id="@+id/minCheeseBurger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="kurangJumlah"
                     android:text="-"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/teksJumlahCheeseBurger"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="kurangJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/teksJumlahCheeseBurger"
@@ -259,17 +261,18 @@
                     android:id="@+id/plusCheeseBurger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="tambahJumlah"
                     android:text="+"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/cbCheeseBurger"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="tambahJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layout4"
                 android:layout_width="match_parent"
@@ -313,15 +316,15 @@
                     android:id="@+id/minCheeseKebab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="kurangJumlah"
                     android:text="-"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/teksJumlahCheeseKebab"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="kurangJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/teksJumlahCheeseKebab"
@@ -339,17 +342,18 @@
                     android:id="@+id/plusCheeseKebab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="tambahJumlah"
                     android:text="+"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/cbCheeseKebab"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="tambahJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layout5"
                 android:layout_width="match_parent"
@@ -393,15 +397,15 @@
                     android:id="@+id/minMiloIce"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="kurangJumlah"
                     android:text="-"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/teksJumlahMiloIce"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="kurangJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/teksJumlahMiloIce"
@@ -419,114 +423,115 @@
                     android:id="@+id/plusMiloIce"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
                     android:gravity="center_horizontal|center_vertical"
+                    android:onClick="tambahJumlah"
                     android:text="+"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:background="@color/colorTextTheme"
                     app:layout_constraintEnd_toStartOf="@+id/cbMiloIce"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:onClick="tambahJumlah"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/layout6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/layout5"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="181dp">
-
-            <TextView
-                android:id="@+id/teksLemonTea"
-                android:layout_width="0dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="Lemon Tea"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/minLemonTea"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/hargaLemonTea"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="Rp 5.000"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/minLemonTea"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/teksLemonTea" />
-
-            <CheckBox
-                android:id="@+id/cbLemonTea"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout5"
                 android:layout_marginTop="8dp"
-                android:layout_marginRight="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_marginBottom="181dp">
+
+                <TextView
+                    android:id="@+id/teksLemonTea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Lemon Tea"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/minLemonTea"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/hargaLemonTea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Rp 5.000"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/minLemonTea"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/teksLemonTea" />
+
+                <CheckBox
+                    android:id="@+id/cbLemonTea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/minLemonTea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="kurangJumlah"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/teksJumlahLemonTea"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/teksJumlahLemonTea"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/plusLemonTea"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/plusLemonTea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTextTheme"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="tambahJumlah"
+                    android:text="+"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/cbLemonTea"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Button
-                android:id="@+id/minLemonTea"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorTextTheme"
-                android:gravity="center_horizontal|center_vertical"
-                android:onClick="kurangJumlah"
-                android:text="-"
-                android:textColor="@color/colorWhite"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/teksJumlahLemonTea"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/teksJumlahLemonTea"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="0"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/plusLemonTea"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/plusLemonTea"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorTextTheme"
-                android:gravity="center_horizontal|center_vertical"
-                android:onClick="tambahJumlah"
-                android:text="+"
-                android:textColor="@color/colorWhite"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/cbLemonTea"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Button
-                android:layout_below="@+id/layout6"
                 android:id="@+id/bPesan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
-                android:text="Pesan"
-                android:textColor="@color/colorTheme"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:layout_below="@+id/layout6"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:background="@color/colorTextTheme"
-                android:onClick="kirimPesanan"/>
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="kirimPesanan"
+                android:layout_marginBottom="80dp"
+                android:text="Pesan"
+                android:textColor="@color/colorTheme"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

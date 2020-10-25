@@ -15,7 +15,6 @@ public class DilaActivityHalamanUtama extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dila_halaman_utama);
-        getActionBar().hide();
     }
     public void button_lokasi(View view) {
         Intent intent = new Intent(this, DilaActivityCabangLokasi.class);
@@ -47,6 +46,11 @@ public class DilaActivityHalamanUtama extends AppCompatActivity {
 
     public void button_menu(View view) {
         Intent intent = new Intent(this,RickyActivity.class);
+        startActivity(intent);
+    }
+
+    public void button_credit(View view) {
+        Intent intent = new Intent(this,MinaActivity.class);
         startActivity(intent);
     }
 }

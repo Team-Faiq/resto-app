@@ -19,7 +19,6 @@ public class RickyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ricky);
-        getActionBar().hide();
 
         lst=(ListView) findViewById(R.id.listview);
         buttonpesan = (Button) findViewById(R.id.ButtonPesan);
