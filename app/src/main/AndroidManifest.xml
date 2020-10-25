@@ -9,25 +9,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MinaActivity"></activity>
-        <activity android:name=".RickyActivity" />
-        <activity android:name=".DilaActivity" />
-        <activity android:name=".FaiqActivity"
-            android:label="Faiq Activity"
-            android:parentActivityName=".RayhanActivity">
+        <activity android:name=".DilaActivityCabangLokasi"
+            android:label = "Cabang Lokasi"
+            android:parentActivityName=".DilaActivityHalamanUtama">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".RayhanActivity"
-                />
+                android:value=".DilaActivityHalamanUtama"/>
+    </activity>
+        <activity android:name=".DilaActivityHalamanUtama"
+            android:label = "Halaman Utama"
+            android:parentActivityName=".DilaActivity">
         </activity>
-        <activity android:name=".RayhanActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MinaActivity" />
+        <activity android:name=".RickyActivity" />
+        <activity android:name=".DilaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FaiqActivity"
+            android:label="Faiq Activity"
+            android:parentActivityName=".RayhanActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RayhanActivity" />
+        </activity>
+        <activity android:name=".RayhanActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

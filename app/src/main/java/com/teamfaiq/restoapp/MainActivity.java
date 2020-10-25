@@ -17,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
     public void toPesanan(View view) {
         Intent intent = new Intent(this, RickyActivity.class);
         startActivity(intent);
+
     }
 }

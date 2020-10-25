@@ -22,6 +22,7 @@ public class RayhanActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rayhan);
+        getActionBar().hide();
 
         tBeefBurger = (TextView) findViewById(R.id.teksJumlahBeefBurger);
         tCheeseBurger = (TextView) findViewById(R.id.teksJumlahCheeseBurger);
