@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -41,51 +43,51 @@ public class FaiqActivity extends AppCompatActivity {
             if(c=='x'){
                 continue;
             }else if(c=='A'){
-                data.add("Nasi Goreng");
+                data.add("Iga Sapi Bakar");
                 q=Character.getNumericValue(message.charAt(angka));
                 data1.add(q);
-                data2.add("10.000");
-                q = q*10;
+                data2.add("30.000");
+                q = q*30;
                 total += q;
                 data3.add("Rp "+q+".000");
             }else if(c=='B'){
-                data.add("Beef Burger");
+                data.add("Nila Bakar Madu");
                 q=Character.getNumericValue(message.charAt(angka));
                 data1.add(q);
-                data2.add("23.000");
-                q = q*23;
+                data2.add("22.000");
+                q = q*22;
                 total += q;
                 data3.add("Rp "+q+".000");
             }else if(c=='C'){
-                data.add("Cheese Burger");
+                data.add("Nasi Goreng");
                 q=Character.getNumericValue(message.charAt(angka));
                 data1.add(q);
-                data2.add("25.000");
-                q = q*25;
+                data2.add("18.000");
+                q = q*18;
                 total += q;
                 data3.add("Rp "+q+".000");
             }else if(c=='D'){
-                data.add("Cheese Kebab");
+                data.add("Mie Goreng Jawa");
                 q=Character.getNumericValue(message.charAt(angka));
                 data1.add(q);
-                data2.add("25.000");
-                q = q*25;
+                data2.add("17.000");
+                q = q*17;
                 total += q;
                 data3.add("Rp "+q+".000");
             }else if(c=='E'){
-                data.add("Milo Ice");
+                data.add("Jus Alpukat");
                 q=Character.getNumericValue(message.charAt(angka));
                 data1.add(q);
-                data2.add("7.000");
-                q = q*7;
+                data2.add("12.000");
+                q = q*12;
                 total += q;
                 data3.add("Rp "+q+".000");
             }else if(c=='F'){
-                data.add("Lemon Tea");
+                data.add("Boba Drink");
                 q=Character.getNumericValue(message.charAt(angka));
                 data1.add(q);
-                data2.add("5.000");
-                q = q*5;
+                data2.add("11.000");
+                q = q*11;
                 total += q;
                 data3.add("Rp "+q+".000");
             }
@@ -144,5 +146,11 @@ public class FaiqActivity extends AppCompatActivity {
     }
 
 
-
+    public void kirimBayar(View view) {
+        Toast pesan;
+        pesan = Toast.makeText(this, "Pembayaran Berhasil.", Toast.LENGTH_SHORT);
+        pesan.show();
+        Intent intent = new Intent(this,DilaActivityHalamanUtama.class);
+        startActivity(intent);
+    }
 }

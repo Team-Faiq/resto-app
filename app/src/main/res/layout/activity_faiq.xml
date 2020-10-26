@@ -106,7 +106,8 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:background="@color/colorTextTheme"
-            android:layout_marginBottom="100dp"/>
+            android:layout_marginBottom="100dp"
+            android:onClick="kirimBayar"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

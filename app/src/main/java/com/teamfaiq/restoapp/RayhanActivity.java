@@ -161,17 +161,17 @@ public class RayhanActivity extends AppCompatActivity {
         String makananNull = "";
 
         if (cNasiGoreng.isChecked() && jmlNasgor > 0) makanan+= "A"+Integer.toString(jmlNasgor)+"x";
-        else if (cNasiGoreng.isChecked()) makananNull += "Nasi Goreng, ";
+        else if (cNasiGoreng.isChecked()) makananNull += "Iga Sapi Bakar, ";
         if (cBeefBurger.isChecked() && jmlBBurger > 0) makanan+= "B"+Integer.toString(jmlBBurger)+"x";
-        else if (cBeefBurger.isChecked()) makananNull += "Beef Burger, ";
+        else if (cBeefBurger.isChecked()) makananNull += "Nila Bakar Madu, ";
         if (cCheeseBurger.isChecked() && jmlCBurger > 0) makanan+= "C"+Integer.toString(jmlCBurger)+"x";
-        else if (cCheeseBurger.isChecked()) makananNull += "Cheese Burger, ";
+        else if (cCheeseBurger.isChecked()) makananNull += "Nasi Goreng, ";
         if (cCheeseKebab.isChecked() && jmlCKebab > 0) makanan+= "D"+Integer.toString(jmlCKebab)+"x";
-        else if (cCheeseKebab.isChecked()) makananNull += "Cheese Kebab, ";
+        else if (cCheeseKebab.isChecked()) makananNull += "Mie Goreng Jawa, ";
         if (cIceMilo.isChecked() && jmlIMilo > 0) makanan+= "E"+Integer.toString(jmlIMilo)+"x";
-        else if (cIceMilo.isChecked()) makananNull += "Milo Ice, ";
+        else if (cIceMilo.isChecked()) makananNull += "Jus Alpukat, ";
         if (cLemonTea.isChecked() && jmlLTea > 0) makanan+= "F"+Integer.toString(jmlLTea)+"x";
-        else if (cLemonTea.isChecked()) makananNull += "Lemon Tea, ";
+        else if (cLemonTea.isChecked()) makananNull += "Boba Drink, ";
 
         if (makananNull.equals("") && !makanan.isEmpty() || !makanan.equals("")) {
             String message = makanan;
